@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary SEO Metadata -->
+  <title>Prottoy Roy | Software Engineering Student &amp; Problem Solver</title>
+  <meta name="description" content="Prottoy Roy is a Software Engineering student at Metropolitan University, problem solver, and aspiring app developer focused on building practical software applications.">
+  <meta name="author" content="Prottoy Roy">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#07090e">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Prottoy Roy Portfolio">
+  <meta property="og:title" content="Prottoy Roy | Software Engineering Student &amp; Problem Solver">
+  <meta property="og:description" content="Software Engineering student at Metropolitan University, passionate about problem solving, software development, and building practical applications.">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prottoy Roy | Software Engineering Student &amp; Problem Solver">
+  <meta name="twitter:description" content="Software Engineering student at Metropolitan University, passionate about problem solving, software development, and building practical applications.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Prottoy Roy",
+    "jobTitle": "Software Engineering Student & Aspiring App Developer",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Metropolitan University"
+    },
+    "knowsAbout": [
+      "Software Engineering",
+      "Data Structures and Algorithms",
+      "Java",
+      "Relational Databases",
+      "Problem Solving",
+      "Application Development"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Accessibility Skip Navigation Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ==========================================================================
+       STICKY HEADER & NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Prottoy Roy - Back to home">
+        <span class="brand-badge" aria-hidden="true">PR</span>
+        <div class="brand-name">
+          <span class="brand-title">Prottoy Roy</span>
+          <span class="brand-sub">SE • Metropolitan Univ</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#problem-solving" class="nav-link">Problem Solving</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Quick Action CTA Button -->
+      <a href="#contact" class="nav-cta-btn">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>Let's Connect</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" type="button" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Off-Canvas Navigation Drawer -->
+  <div class="mobile-nav" id="mobile-navigation" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <div class="mobile-nav-header">
+      <div class="brand-logo">
+        <span class="brand-badge">PR</span>
+        <div class="brand-name">
+          <span class="brand-title">Prottoy Roy</span>
+          <span class="brand-sub">Software Engineering</span>
+        </div>
+      </div>
+      <button class="modal-close mobile-close-btn" type="button" aria-label="Close Navigation Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links" role="navigation">
+      <a href="#hero" class="mobile-nav-link"><span>01</span> Home</a>
+      <a href="#about" class="mobile-nav-link"><span>02</span> About</a>
+      <a href="#skills" class="mobile-nav-link"><span>03</span> Skills</a>
+      <a href="#projects" class="mobile-nav-link"><span>04</span> Projects</a>
+      <a href="#problem-solving" class="mobile-nav-link"><span>05</span> Problem Solving</a>
+      <a href="#achievements" class="mobile-nav-link"><span>06</span> Achievements</a>
+      <a href="#education" class="mobile-nav-link"><span>07</span> Education</a>
+      <a href="#contact" class="mobile-nav-link"><span>08</span> Contact</a>
+    </nav>
+
+    <div class="mobile-nav-footer">
+      <a href="#contact" class="btn btn-primary" style="width: 100%;">Get In Touch</a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MAIN PAGE CONTENT
+       ========================================================================== -->
+  <main id="main-content">
+
+    <!-- ==========================================================================
+         1. HERO SECTION
+         ========================================================================== -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <!-- Identity Pill -->
+          <div class="hero-identity-tag">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>2nd Year SE • Metropolitan University</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-name">PROTTOY ROY</h1>
+
+          <p class="hero-role-title">
+            Software Engineering Student &bull; Problem Solver &bull; Aspiring App Developer
+          </p>
+
+          <p class="hero-bio">
+            I’m a Software Engineering student at Metropolitan University, passionate about problem solving, software development, and building practical applications that solve real-world problems.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <span>View My Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary btn-lg">
+              <span>Let's Connect</span>
+            </a>
+          </div>
+
+          <!-- Social Links Row -->
+          <div class="hero-socials">
+            <span class="hero-social-label">Profiles:</span>
+            <a href="https://github.com/[YOUR_GITHUB_USERNAME]" target="_blank" rel="noopener noreferrer" class="social-link-item" aria-label="GitHub Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://linkedin.com/in/[YOUR_LINKEDIN_USERNAME]" target="_blank" rel="noopener noreferrer" class="social-link-item" aria-label="LinkedIn Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="https://codeforces.com/profile/[YOUR_CODEFORCES_HANDLE]" target="_blank" rel="noopener noreferrer" class="social-link-item" aria-label="Codeforces Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>Codeforces</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Interactive Developer Workspace -->
+        <div class="hero-visual-wrapper">
+          <div class="hero-workspace code-window">
+            <div class="window-header">
+              <div class="window-dots" aria-hidden="true">
+                <span class="window-dot close"></span>
+                <span class="window-dot minimize"></span>
+                <span class="window-dot maximize"></span>
+              </div>
+              <span class="window-title" id="hero-status-file">FurnitureApp.java</span>
+              <span class="badge badge-emerald" id="hero-status-lang">Java</span>
+            </div>
+
+            <!-- Interactive Workspace Tabs -->
+            <div class="window-tabs" role="tablist" aria-label="Code Snippet Tabs">
+              <button class="window-tab hero-tab-btn active" role="tab" aria-selected="true" data-tab="java" type="button">
+                <span>Architecture.java</span>
+              </button>
+              <button class="window-tab hero-tab-btn" role="tab" aria-selected="false" data-tab="sql" type="button">
+                <span>Schema.sql</span>
+              </button>
+              <button class="window-tab hero-tab-btn" role="tab" aria-selected="false" data-tab="cpp" type="button">
+                <span>BST.cpp</span>
+              </button>
+              <button class="window-tab hero-tab-btn" role="tab" aria-selected="false" data-tab="json" type="button">
+                <span>Spec.json</span>
+              </button>
+            </div>
+
+            <!-- Code Body Display -->
+            <div class="window-content" id="hero-code-display" tabindex="0" aria-label="Interactive Code Viewer">
+              <!-- Rendered dynamically by hero-visual.js -->
+            </div>
+
+            <!-- Statusbar with Run / Inspect trigger -->
+            <div class="workspace-statusbar">
+              <div class="workspace-actions">
+                <button class="workspace-run-btn" id="hero-run-btn" type="button" aria-label="Execute or inspect the current code file">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                  <span>Run / Inspect</span>
+                </button>
+              </div>
+              <span style="font-size: 0.72rem; color: var(--text-dim);">UTF-8 &bull; LF</span>
+            </div>
+
+            <!-- Simulated Terminal Output Pane -->
+            <div class="workspace-output" id="hero-output-text" aria-live="polite">
+              <span style="opacity: 0.6;">Ready to execute FurnitureApp.java. Click 'Run / Inspect'</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ==========================================================================
+         2. ABOUT ME SECTION
+         ========================================================================== -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Academic &amp; Engineering Focus</span>
+          <h2 id="about-title" class="section-title">ENGINEERING WITH PURPOSE &amp; RIGOR.</h2>
+          <p class="section-subtitle">
+            A software engineering student dedicated to understanding systems from the ground up — from database schemas and data structures to full-featured interactive applications.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <p>
+              I am currently in my <strong>2nd Year (3rd Semester)</strong> pursuing a <strong>B.Sc. (Hons) in Software Engineering</strong> at <strong>Metropolitan University</strong>, with expected graduation in <strong>2029</strong>.
+            </p>
+            <p>
+              Rather than jumping solely from framework to framework, my educational focus is deeply grounded in foundational computing: structured relational database modeling, object-oriented software design, and rigorous algorithmic problem solving.
+            </p>
+
+            <div class="about-quote">
+              <p>"Software Engineering Student &rarr; Problem Solver &rarr; Builder &rarr; Future Software Engineer"</p>
+            </div>
+
+            <p>
+              My ambition is to build reliable, maintainable software and mobile applications that address everyday human and organizational challenges with precision, clean architecture, and delightful user experiences.
+            </p>
+
+            <div style="margin-top: var(--space-lg);">
+              <h4 style="font-size: var(--text-sm); font-family: var(--font-mono); color: var(--text-primary); text-transform: uppercase; margin-bottom: var(--space-xs); letter-spacing: 0.05em;">
+                Core Interest Areas
+              </h4>
+              <div class="interest-grid">
+                <span class="interest-tag">Software Development</span>
+                <span class="interest-tag">Mobile Application Development</span>
+                <span class="interest-tag">Problem Solving</span>
+                <span class="interest-tag">Database Systems</span>
+                <span class="interest-tag">Data Structures &amp; Algorithms</span>
+                <span class="interest-tag">Building Real-World Applications</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Specification Blueprint Card -->
+          <div class="spec-card">
+            <div class="spec-header">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+                <span style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; color: var(--text-primary); text-transform: uppercase;">Academic Profile</span>
+              </div>
+              <span class="badge badge-emerald">Enrolled</span>
+            </div>
+
+            <div class="spec-row">
+              <span class="spec-key">Name</span>
+              <span class="spec-val">Prottoy Roy</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">University</span>
+              <span class="spec-val">Metropolitan University</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Degree</span>
+              <span class="spec-val">B.Sc. (Hons) in Software Engineering</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Academic Status</span>
+              <span class="spec-val">2nd Year, 3rd Semester</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Graduation</span>
+              <span class="spec-val">Expected 2029</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Location</span>
+              <span class="spec-val">Bangladesh</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Goal</span>
+              <span class="spec-val" style="color: var(--accent-primary);">Professional App / Software Developer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ==========================================================================
+         3. SKILLS SECTION
+         ========================================================================== -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Technical Capability Matrix</span>
+          <h2 id="skills-title" class="section-title">TECHNOLOGY &amp; ALGORITHMIC TOOLKIT.</h2>
+          <p class="section-subtitle">
+            An honest, transparent inventory of languages, relational database tooling, core data structures, algorithms, and active exploration areas — presented without artificial percentages.
+          </p>
+        </div>
+
+        <!-- Interactive Filter & Search Bar -->
+        <div class="skills-toolbar">
+          <div class="skills-filters" role="group" aria-label="Skill Category Filter">
+            <button class="filter-btn active" data-filter="all" type="button" aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter="programming" type="button" aria-pressed="false">Programming</button>
+            <button class="filter-btn" data-filter="database" type="button" aria-pressed="false">Database</button>
+            <button class="filter-btn" data-filter="dsa" type="button" aria-pressed="false">DSA</button>
+            <button class="filter-btn" data-filter="tools" type="button" aria-pressed="false">Tools</button>
+            <button class="filter-btn" data-filter="exploring" type="button" aria-pressed="false">Exploring</button>
+          </div>
+
+          <div class="skills-search-wrapper">
+            <svg class="skills-search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="skills-search-input" class="skills-search-input" placeholder="Search technology or DSA..." aria-label="Search skills or data structures">
+          </div>
+        </div>
+
+        <!-- Categorized Skills Grid -->
+        <div class="skills-category-list">
+          <!-- Programming -->
+          <div class="skill-category-block" data-category="programming">
+            <div class="category-header-row">
+              <span class="category-label">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                Programming Languages
+              </span>
+              <span class="category-badge-count">4 items</span>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip" data-name="C"><strong>C</strong></span>
+              <span class="skill-chip" data-name="C++"><strong>C++</strong></span>
+              <span class="skill-chip" data-name="Java"><strong>Java</strong></span>
+              <span class="skill-chip" data-name="Python"><strong>Python</strong></span>
+            </div>
+          </div>
+
+          <!-- Database -->
+          <div class="skill-category-block" data-category="database">
+            <div class="category-header-row">
+              <span class="category-label">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+                Database &amp; Data Storage
+              </span>
+              <span class="category-badge-count">3 items</span>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip" data-name="SQL"><strong>SQL</strong></span>
+              <span class="skill-chip" data-name="MariaDB"><strong>MariaDB</strong></span>
+              <span class="skill-chip" data-name="JDBC"><strong>JDBC</strong></span>
+            </div>
+          </div>
+
+          <!-- Data Structures & Algorithms -->
+          <div class="skill-category-block" data-category="dsa">
+            <div class="category-header-row">
+              <span class="category-label">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="6" y1="3" x2="6" y2="15"></line>
+                  <circle cx="18" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <path d="M18 9a9 9 0 0 1-9 9"></path>
+                </svg>
+                Data Structures &amp; Algorithms
+              </span>
+              <span class="category-badge-count">17 items</span>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip" data-name="Arrays">Arrays</span>
+              <span class="skill-chip" data-name="Strings">Strings</span>
+              <span class="skill-chip" data-name="Vector">Vector</span>
+              <span class="skill-chip" data-name="Set">Set</span>
+              <span class="skill-chip" data-name="Map">Map</span>
+              <span class="skill-chip" data-name="Stack">Stack</span>
+              <span class="skill-chip" data-name="Queue">Queue</span>
+              <span class="skill-chip" data-name="Binary Tree">Binary Tree</span>
+              <span class="skill-chip" data-name="BST">BST (Binary Search Tree)</span>
+              <span class="skill-chip" data-name="AVL Tree">AVL Tree</span>
+              <span class="skill-chip" data-name="Heap">Heap</span>
+              <span class="skill-chip" data-name="Sorting">Sorting</span>
+              <span class="skill-chip" data-name="Searching">Searching</span>
+              <span class="skill-chip" data-name="Binary Search">Binary Search</span>
+              <span class="skill-chip" data-name="Recursion">Recursion</span>
+              <span class="skill-chip" data-name="Sliding Window">Sliding Window</span>
+              <span class="skill-chip" data-name="Frequency Counting">Frequency Counting</span>
+            </div>
+          </div>
+
+          <!-- Development Tools -->
+          <div class="skill-category-block" data-category="tools">
+            <div class="category-header-row">
+              <span class="category-label">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+                Development &amp; Tools
+              </span>
+              <span class="category-badge-count">5 items</span>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip" data-name="Java GUI">Java GUI</span>
+              <span class="skill-chip" data-name="Database Applications">Database Applications</span>
+              <span class="skill-chip" data-name="GitHub">GitHub</span>
+              <span class="skill-chip" data-name="VS Code">VS Code</span>
+              <span class="skill-chip" data-name="Vercel">Vercel</span>
+            </div>
+          </div>
+
+          <!-- Currently Exploring -->
+          <div class="skill-category-block" data-category="exploring">
+            <div class="category-header-row">
+              <span class="category-label">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+                Currently Exploring
+              </span>
+              <span class="category-badge-count">4 items</span>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip exploring" data-name="Flutter">Flutter</span>
+              <span class="skill-chip exploring" data-name="Dart">Dart</span>
+              <span class="skill-chip exploring" data-name="React Native">React Native</span>
+              <span class="skill-chip exploring" data-name="Mobile Application Development">Mobile Application Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ==========================================================================
+         4. PROJECTS SECTION
+         ========================================================================== -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Practical Software Applications</span>
+          <h2 id="projects-title" class="section-title">FEATURED WORK &amp; SYSTEMS.</h2>
+          <p class="section-subtitle">
+            Real software built and planned, focusing on relational data management, graphical user interfaces, and mobile client architectures.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJECT 01: Prottoy Furniture -->
+          <article class="project-card" aria-labelledby="proj-01-title">
+            <div class="project-content">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-category">Database / Software Application</span>
+                  <span class="badge badge-emerald">Completed</span>
+                </div>
+                <h3 id="proj-01-title" class="project-title">01 &bull; Prottoy Furniture</h3>
+                <p class="project-desc">
+                  A furniture factory and shop management application designed to manage customers, furniture inventory, orders, and order items using a relational database.
+                </p>
+
+                <div class="project-highlights-list">
+                  <div class="project-highlight-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Customer and furniture inventory management with normalized relational schema</span>
+                  </div>
+                  <div class="project-highlight-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Order and order item transactional tracking with ERD integrity</span>
+                  </div>
+                  <div class="project-highlight-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Java GUI front-office dashboard connected to MariaDB via JDBC</span>
+                  </div>
+                </div>
+
+                <div class="project-tags">
+                  <span class="badge">Java</span>
+                  <span class="badge">JDBC</span>
+                  <span class="badge">MariaDB</span>
+                  <span class="badge">SQL</span>
+                  <span class="badge">Relational ERD</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-outline-accent btn-sm" data-project-details="prottoy-furniture">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                  <span>View Schema &amp; Architecture</span>
+                </button>
+                <a href="https://github.com/[YOUR_GITHUB_USERNAME]/prottoy-furniture" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Preview Frame -->
+            <div class="project-preview">
+              <div class="preview-architecture-frame">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 6px;">
+                  <span style="font-size: 0.75rem; color: var(--accent-primary); font-weight: 700;">RELATIONAL ERD ARCHITECTURE</span>
+                  <span class="schema-badge">MariaDB / JDBC</span>
+                </div>
+                <div style="font-size: 0.72rem; color: var(--text-secondary); line-height: 1.8;">
+                  <div>&bull; <strong style="color: var(--accent-cyan);">CUSTOMERS</strong> (customer_id, full_name, phone)</div>
+                  <div style="margin-left: 14px; color: var(--text-muted);">&darr; 1-to-Many</div>
+                  <div>&bull; <strong style="color: var(--accent-cyan);">ORDERS</strong> (order_id, customer_id, order_date)</div>
+                  <div style="margin-left: 14px; color: var(--text-muted);">&darr; 1-to-Many</div>
+                  <div>&bull; <strong style="color: var(--accent-cyan);">ORDER_ITEMS</strong> (order_id, item_id, qty)</div>
+                  <div style="margin-left: 14px; color: var(--text-muted);">&uarr; Many-to-1</div>
+                  <div>&bull; <strong style="color: var(--accent-cyan);">FURNITURE_ITEMS</strong> (item_id, name, stock)</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: GUI Database Project -->
+          <article class="project-card project-card-reverse" aria-labelledby="proj-02-title">
+            <div class="project-content">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-category">GUI / Database</span>
+                  <span class="badge badge-emerald">Completed</span>
+                </div>
+                <h3 id="proj-02-title" class="project-title">02 &bull; GUI Database Project</h3>
+                <p class="project-desc">
+                  A GUI-based database application developed as part of my software engineering and database learning.
+                </p>
+
+                <div class="project-highlights-list">
+                  <div class="project-highlight-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Intuitive graphical user interface with event-driven user interaction</span>
+                  </div>
+                  <div class="project-highlight-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Secure queries and record manipulation with input validation</span>
+                  </div>
+                </div>
+
+                <div class="project-tags">
+                  <span class="badge">Python</span>
+                  <span class="badge">Database GUI</span>
+                  <span class="badge">SQL</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-outline-accent btn-sm" data-project-details="gui-database-project">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                  <span>View Details</span>
+                </button>
+                <a href="https://github.com/[YOUR_GITHUB_USERNAME]/gui-database-project" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Preview Frame -->
+            <div class="project-preview">
+              <div class="preview-architecture-frame">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 6px;">
+                  <span style="font-size: 0.75rem; color: var(--accent-primary); font-weight: 700;">PYTHON GUI ARCHITECTURE</span>
+                  <span class="schema-badge">Event &bull; Query</span>
+                </div>
+                <div style="font-size: 0.72rem; color: var(--text-secondary); line-height: 1.8;">
+                  <div>&bull; <strong style="color: var(--accent-cyan);">GUI Layout:</strong> Form inputs &amp; table viewer</div>
+                  <div>&bull; <strong style="color: var(--accent-cyan);">Validation Layer:</strong> Type sanitization</div>
+                  <div>&bull; <strong style="color: var(--accent-cyan);">Query Handler:</strong> Parameterized SQL</div>
+                  <div>&bull; <strong style="color: var(--accent-cyan);">State Sync:</strong> Instant UI dataset reload</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: Student Management App -->
+          <article class="project-card" aria-labelledby="proj-03-title">
+            <div class="project-content">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-category">Mobile Application</span>
+                  <span class="badge badge-amber">Upcoming / In Progress</span>
+                </div>
+                <h3 id="proj-03-title" class="project-title">03 &bull; Student Management App</h3>
+                <p class="project-desc">
+                  A planned real-world student management application focused on providing useful student-oriented functionality through a modern mobile interface.
+                </p>
+
+                <div class="project-highlights-list">
+                  <div class="project-highlight-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Semester scheduling, coursework deadlines, and academic resource hub</span>
+                  </div>
+                  <div class="project-highlight-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Cross-platform mobile architecture with reactive UI components</span>
+                  </div>
+                </div>
+
+                <div class="project-tags">
+                  <span class="badge">Flutter / Dart or React Native</span>
+                  <span class="badge">Mobile UI</span>
+                  <span class="badge">Student Utility</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-outline-accent btn-sm" data-project-details="student-management-app">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                  <span>View Project Scope</span>
+                </button>
+                <a href="https://github.com/[YOUR_GITHUB_USERNAME]/student-management-app" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Preview Frame -->
+            <div class="project-preview">
+              <div class="preview-architecture-frame">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 6px;">
+                  <span style="font-size: 0.75rem; color: var(--accent-amber); font-weight: 700;">UPCOMING MOBILE ARCHITECTURE</span>
+                  <span class="badge badge-amber" style="font-size: 0.65rem;">In Development</span>
+                </div>
+                <div style="font-size: 0.72rem; color: var(--text-secondary); line-height: 1.8;">
+                  <div>&bull; <strong style="color: var(--text-primary);">Declarative Mobile UI:</strong> Flutter / Dart or React Native</div>
+                  <div>&bull; <strong style="color: var(--text-primary);">Local Database Cache:</strong> Offline semester data</div>
+                  <div>&bull; <strong style="color: var(--text-primary);">Notification Bridge:</strong> Class alerts &amp; assignment dates</div>
+                  <div>&bull; <strong style="color: var(--text-primary);">Clean Architecture:</strong> UI &harr; Logic &harr; Data</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ==========================================================================
+         5. PROBLEM SOLVING SECTION
+         ========================================================================== -->
+    <section id="problem-solving" class="section" aria-labelledby="ps-title">
+      <div class="container">
+        <div class="problem-solving-container">
+          <div>
+            <span class="section-eyebrow">Algorithmic Mindset</span>
+            <h2 id="ps-title" class="ps-headline">"PROBLEM SOLVING IS HOW I THINK."</h2>
+            <p class="ps-intro">
+              Algorithmic problem solving is the core engine behind how I analyze software challenges. Writing clean, optimal solutions within strict time and space complexity boundaries is fundamental to my engineering craft.
+            </p>
+
+            <div class="ps-metrics-grid">
+              <div class="ps-metric-card stat-item">
+                <div class="stat-number" data-target="200" data-suffix="+">200<span class="stat-accent">+</span></div>
+                <div class="stat-label">Problems Solved</div>
+              </div>
+
+              <div class="ps-metric-card stat-item">
+                <div class="stat-number" style="font-size: var(--text-xl); color: var(--accent-primary);">Active</div>
+                <div class="stat-label">Codeforces Competitor</div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: var(--space-sm); margin-bottom: var(--space-lg);">
+              <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-muted); text-transform: uppercase;">
+                Verified Contest Status
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-sm); flex-wrap: wrap;">
+                <span class="badge badge-emerald">Programming Contest Participant</span>
+                <span class="badge badge-cyan">Rating: Active Contestant / [YOUR RATING]</span>
+              </div>
+            </div>
+
+            <a href="https://codeforces.com/profile/[YOUR_CODEFORCES_HANDLE]" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <span>View Codeforces Profile</span>
+            </a>
+          </div>
+
+          <!-- Interactive Algorithmic Node Network Canvas -->
+          <div class="ps-canvas-card">
+            <div class="ps-canvas-header">
+              <span style="font-weight: 700; color: var(--accent-primary);">ALGORITHM &amp; DATA STRUCTURE GRAPH</span>
+              <span class="canvas-hint">
+                <span class="status-dot" style="width: 6px; height: 6px;"></span>
+                <span>Hover &amp; Drag Canvas</span>
+              </span>
+            </div>
+            <canvas id="ps-algorithm-canvas" class="ps-canvas-element" aria-label="Interactive Algorithm Node Network Visualizer"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ==========================================================================
+         6. ACHIEVEMENTS SECTION
+         ========================================================================== -->
+    <section id="achievements" class="section" aria-labelledby="achievements-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Milestones &amp; Dedication</span>
+          <h2 id="achievements-title" class="section-title">PROVEN MILESTONES.</h2>
+          <p class="section-subtitle">
+            Authentic records from programming contests, problem-solving journeys, and university team activities.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Milestone 1 -->
+          <div class="achievement-card">
+            <div>
+              <div class="achievement-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="achievement-title">200+ Problems Solved</h3>
+              <p class="achievement-desc">
+                Consistent problem solving across online judges, practicing data structures, complexity reduction, and analytical edge-case handling.
+              </p>
+            </div>
+            <div class="achievement-meta">
+              Continuous Dedication &bull; Data Structures &amp; Algorithms
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="achievement-card">
+            <div>
+              <div class="achievement-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="achievement-title">Codeforces Contests</h3>
+              <p class="achievement-desc">
+                Regular participant in timed competitive programming rounds, building fast debugging intuition and optimal implementation speed.
+              </p>
+            </div>
+            <div class="achievement-meta">
+              Timed Contests &bull; Competitive Programming
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="achievement-card">
+            <div>
+              <div class="achievement-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <h3 class="achievement-title">IMU PC Contest Certificate</h3>
+              <p class="achievement-desc">
+                Awarded official certificate of participation in the Intra-Metropolitan University Programming Contest (IMU PC), testing algorithmic rigor under pressure.
+              </p>
+            </div>
+            <div class="achievement-meta">
+              Metropolitan University &bull; Official Programming Contest
+            </div>
+          </div>
+
+          <!-- Milestone 4 -->
+          <div class="achievement-card">
+            <div>
+              <div class="achievement-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="12 6 15 11 12 16 9 11 12 6"></polygon>
+                </svg>
+              </div>
+              <h3 class="achievement-title">SWE Intra Futsal Tournament</h3>
+              <p class="achievement-desc">
+                Competed in the Department Intra Futsal Tournament Season 02 with team <strong>SWE 8th Stellars</strong>, exemplifying teamwork, camaraderie, and team communication.
+              </p>
+            </div>
+            <div class="achievement-meta">
+              Team: SWE 8th Stellars &bull; Season 02
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ==========================================================================
+         7. EDUCATION SECTION
+         ========================================================================== -->
+    <section id="education" class="section" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Academic Foundation</span>
+          <h2 id="education-title" class="section-title">EDUCATION &amp; DEGREE.</h2>
+          <p class="section-subtitle">
+            Formal software engineering studies combining computer science theory, systems architecture, and engineering mathematics.
+          </p>
+        </div>
+
+        <div class="education-card">
+          <div class="education-main">
+            <span class="badge badge-emerald" style="margin-bottom: var(--space-sm);">2025 — 2029</span>
+            <h3>Metropolitan University</h3>
+            <p class="education-degree">B.Sc. (Hons) in Software Engineering</p>
+            <p style="color: var(--text-secondary); font-size: var(--text-sm); line-height: 1.65; margin-bottom: 0;">
+              Pursuing rigorous education in software design principles, relational database administration, computational mathematics, and end-to-end system development.
+            </p>
+          </div>
+
+          <div class="education-details-grid">
+            <div class="edu-detail-row">
+              <span class="edu-detail-label">Current Academic Standing</span>
+              <span class="edu-detail-val" style="color: var(--accent-primary);">2nd Year &bull; 3rd Semester</span>
+            </div>
+            <div class="edu-detail-row">
+              <span class="edu-detail-label">Expected Graduation</span>
+              <span class="edu-detail-val">2029</span>
+            </div>
+            <div class="edu-detail-row">
+              <span class="edu-detail-label">Department</span>
+              <span class="edu-detail-val">Software Engineering</span>
+            </div>
+            <div class="edu-detail-row">
+              <span class="edu-detail-label">Location</span>
+              <span class="edu-detail-val">Sylhet, Bangladesh</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ==========================================================================
+         8. CURRENTLY LEARNING SECTION
+         ========================================================================== -->
+    <section id="learning" class="section" aria-labelledby="learning-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Continuous Progression</span>
+          <h2 id="learning-title" class="section-title">"ALWAYS LEARNING. ALWAYS BUILDING."</h2>
+          <p class="section-subtitle">
+            Actively expanding my horizons into cross-platform mobile engineering, client-server architectures, and production-grade design paradigms.
+          </p>
+        </div>
+
+        <div class="learning-roadmap">
+          <!-- Topic 1 -->
+          <div class="roadmap-card">
+            <span class="roadmap-badge">Mobile Framework</span>
+            <h3 class="roadmap-title">Flutter &amp; Dart</h3>
+            <p class="roadmap-desc">
+              Building widget-driven native mobile interfaces, understanding layout trees, and handling reactive state streams.
+            </p>
+          </div>
+
+          <!-- Topic 2 -->
+          <div class="roadmap-card">
+            <span class="roadmap-badge">Cross-Platform</span>
+            <h3 class="roadmap-title">React Native</h3>
+            <p class="roadmap-desc">
+              Exploring JavaScript bridge communication, component architecture, and responsive mobile styling.
+            </p>
+          </div>
+
+          <!-- Topic 3 -->
+          <div class="roadmap-card">
+            <span class="roadmap-badge">Mobile Paradigms</span>
+            <h3 class="roadmap-title">Mobile App Development</h3>
+            <p class="roadmap-desc">
+              Mastering mobile device storage, responsive touch ergonomics, navigation patterns, and app lifecycle states.
+            </p>
+          </div>
+
+          <!-- Topic 4 -->
+          <div class="roadmap-card">
+            <span class="roadmap-badge">Backend Basics</span>
+            <h3 class="roadmap-title">Backend Fundamentals</h3>
+            <p class="roadmap-desc">
+              Understanding RESTful endpoint conventions, HTTP status codes, and server data flow beyond local JDBC.
+            </p>
+          </div>
+
+          <!-- Topic 5 -->
+          <div class="roadmap-card">
+            <span class="roadmap-badge">System Design</span>
+            <h3 class="roadmap-title">Software Architecture</h3>
+            <p class="roadmap-desc">
+              Studying separation of concerns (UI, Business Logic, Data layer), modularity, and clean code refactoring.
+            </p>
+          </div>
+
+          <!-- Topic 6 -->
+          <div class="roadmap-card">
+            <span class="roadmap-badge">Product Mindset</span>
+            <h3 class="roadmap-title">Real-World App Dev</h3>
+            <p class="roadmap-desc">
+              Translating software engineering concepts into tangible, deployable software applications that deliver user value.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ==========================================================================
+         9. CONTACT SECTION
+         ========================================================================== -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 id="contact-title" class="section-title">"LET'S BUILD SOMETHING MEANINGFUL."</h2>
+          <p class="section-subtitle">
+            I'm always interested in learning, building, collaborating, and turning ideas into useful software.
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info-col">
+            <p>
+              Whether you want to discuss software engineering, collaborate on a project, connect regarding an internship opportunity, or talk algorithms — my inbox is always open.
+            </p>
+
+            <div class="contact-cards-group">
+              <!-- Direct Email Card with One-Click Copy -->
+              <div class="contact-channel-card">
+                <div class="channel-icon-label">
+                  <div class="channel-icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="channel-name">Direct Email</div>
+                    <div class="channel-sub">[YOUR EMAIL]</div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-secondary btn-sm" data-copy-text="[YOUR EMAIL]" aria-label="Copy Email address to clipboard">
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- GitHub Link Card -->
+              <a href="https://github.com/[YOUR_GITHUB_USERNAME]" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+                <div class="channel-icon-label">
+                  <div class="channel-icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="channel-name">GitHub</div>
+                    <div class="channel-sub">github.com/[YOUR_GITHUB_USERNAME]</div>
+                  </div>
+                </div>
+                <span class="btn btn-ghost btn-sm" style="color: var(--accent-primary);">Visit &rarr;</span>
+              </a>
+
+              <!-- LinkedIn Link Card -->
+              <a href="https://linkedin.com/in/[YOUR_LINKEDIN_USERNAME]" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+                <div class="channel-icon-label">
+                  <div class="channel-icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="channel-name">LinkedIn</div>
+                    <div class="channel-sub">linkedin.com/in/[YOUR_LINKEDIN_USERNAME]</div>
+                  </div>
+                </div>
+                <span class="btn btn-ghost btn-sm" style="color: var(--accent-primary);">Connect &rarr;</span>
+              </a>
+
+              <!-- Codeforces Link Card -->
+              <a href="https://codeforces.com/profile/[YOUR_CODEFORCES_HANDLE]" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+                <div class="channel-icon-label">
+                  <div class="channel-icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="16 18 22 12 16 6"></polyline>
+                      <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="channel-name">Codeforces</div>
+                    <div class="channel-sub">codeforces.com/profile/[YOUR_CODEFORCES_HANDLE]</div>
+                  </div>
+                </div>
+                <span class="btn btn-ghost btn-sm" style="color: var(--accent-primary);">Profile &rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Client-Side Interactive Message Composer -->
+          <div class="composer-card">
+            <div class="composer-header">
+              <h3 style="font-size: var(--text-base); font-family: var(--font-mono); color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.05em;">
+                Quick Message Composer
+              </h3>
+              <p style="font-size: var(--text-xs); color: var(--text-muted); margin-bottom: 0;">
+                Pre-fills an email message directly into your default email client.
+              </p>
+            </div>
+
+            <form id="contact-composer-form" class="composer-form">
+              <div class="form-group">
+                <label for="sender-name" class="form-label">Your Name</label>
+                <input type="text" id="sender-name" class="form-input" placeholder="e.g. Alex Johnson" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email" class="form-label">Your Email</label>
+                <input type="email" id="sender-email" class="form-input" placeholder="e.g. alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message" class="form-label">Your Message</label>
+                <textarea id="sender-message" class="form-textarea" placeholder="Hello Prottoy, I'd like to discuss a software project..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                <span>Get In Touch</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <span class="composer-hint">
+                &bull; Opens your native email client directly with recipient &amp; subject prefilled.
+              </span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio">
+          <div class="brand-logo" style="margin-bottom: var(--space-xs);">
+            <span class="brand-badge">PR</span>
+            <div class="brand-name">
+              <span class="brand-title">Prottoy Roy</span>
+              <span class="brand-sub">Software Engineering</span>
+            </div>
+          </div>
+          <p>
+            Software Engineering Student &bull; Problem Solver &bull; Aspiring App Developer. Metropolitan University, Expected 2029.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <div class="footer-links">
+            <a href="#hero" class="footer-link">Home</a>
+            <a href="#about" class="footer-link">About</a>
+            <a href="#skills" class="footer-link">Skills</a>
+            <a href="#projects" class="footer-link">Projects</a>
+            <a href="#problem-solving" class="footer-link">Problem Solving</a>
+            <a href="#achievements" class="footer-link">Achievements</a>
+            <a href="#education" class="footer-link">Education</a>
+            <a href="#contact" class="footer-link">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">Profiles</div>
+          <div class="footer-links">
+            <a href="https://github.com/[YOUR_GITHUB_USERNAME]" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+            <a href="https://linkedin.com/in/[YOUR_LINKEDIN_USERNAME]" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+            <a href="https://codeforces.com/profile/[YOUR_CODEFORCES_HANDLE]" target="_blank" rel="noopener noreferrer" class="footer-link">Codeforces</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Prottoy Roy. All rights reserved.
+        </div>
+        <button id="back-to-top-btn" class="footer-back-to-top" type="button" aria-label="Scroll back to top of the page">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+          <span>Back to top</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       INTERACTIVE PROJECT SCHEMA / ARCHITECTURE MODAL
+       ========================================================================== -->
+  <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-project-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <span id="modal-project-category" class="badge badge-emerald" style="margin-bottom: 4px;">Category</span>
+          <h3 id="modal-project-title" style="font-size: var(--text-xl); color: var(--text-primary);">Project Blueprint</h3>
+        </div>
+        <button id="modal-close-btn" class="modal-close" type="button" aria-label="Close Project Modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="modal-project-desc" style="font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-md);"></p>
+        <div id="modal-schema-content"></div>
+        <div id="modal-project-actions" style="margin-top: var(--space-xl); display: flex; gap: var(--space-sm);"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Mount Container -->
+  <div class="toast-container" role="status" aria-live="polite"></div>
+
+  <!-- Application Script Module -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
